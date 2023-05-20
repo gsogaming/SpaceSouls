@@ -16,8 +16,10 @@ public class Boss : MonoBehaviour
     public int scoreValue = 5;
     [Tooltip("Victory Effect when the boss is dealt with")]
     public GameObject victoryEffect;
-    [Tooltip("Drop when the boss is dealt with")]
-    public GameObject drop;
+    [Tooltip("The item drop chance after defeating this enemy")]
+    public float itemDropChance = 1;
+    [Tooltip("The items to drop after defeating this enemy")]
+    public GameObject[] items;
 
 
 
@@ -147,16 +149,12 @@ public class Boss : MonoBehaviour
     {
         AddToScore();
         IncrementBossesDefeated();
+        DropItem();
 
         if (victoryEffect != null)
         {
             Instantiate(victoryEffect, transform.position, transform.rotation, null);
-        }
-
-        if (drop != null)
-        {
-            Instantiate(drop, transform.position, transform.rotation, null);
-        }
+        }       
 
         gameMusicPlayer.clip = mainTrackForTheLevel;
         gameMusicPlayer.Play();
@@ -401,5 +399,18 @@ public class Boss : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(transform.position, followRange);
+    }
+
+    private void DropItem()
+    {
+        if (items != null)
+        {
+            if (Random.value < itemDropChance)
+            {
+                int randomIndex = Random.Range(0, items.Length);
+                Instantiate(items[randomIndex], transform.position, Quaternion.identity);
+            }
+        }
+
     }
 }

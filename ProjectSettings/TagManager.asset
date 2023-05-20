@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Challenge
   - FireRatePowerUp
+  - HpPowerUp
   layers:
   - Default
   - TransparentFX

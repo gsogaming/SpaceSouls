@@ -47,8 +47,17 @@ MonoBehaviour:
   projectilePrefab: {fileID: 4641165794769155162, guid: 19ca1195e585ca348bb386c98ddbab9a, type: 3}
   projectileHolder: {fileID: 0}
   isPlayerControlled: 0
-  fireRate: 5
+  fireRate: 1
   projectileSpread: 1
+  maxHeat: 100
+  heatDissipationRate: 20
+  heatRate: 10
+  currentHeat: 0
+  cooldownTime: 2
+  isCoolingDown: 0
+  cooldownTimer: 0
+  overHeatBarSlider: {fileID: 0}
+  overHeatBarAnim: {fileID: 0}
   fireEffect: {fileID: 6229913163069739088, guid: a499391aa95bee24ab8e999366f75fe4, type: 3}
 --- !u!1 &2319798596730910862
 GameObject:
@@ -214,9 +223,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teamId: 1
-  defaultHealth: 1
-  maximumHealth: 10
-  currentHealth: 10
+  defaultHealth: 400
+  maximumHealth: 400
+  currentHealth: 400
   invincibilityTime: 0
   isAlwaysInvincible: 0
   useLives: 0
@@ -224,7 +233,10 @@ MonoBehaviour:
   maximumLives: 5
   BosshealthSlider: {fileID: 0}
   bossNameText: {fileID: 0}
-  deathEffect: {fileID: 2452382815751308013, guid: 990f3751046a4d840806774f23579fe2, type: 3}
+  playerHealthSlider: {fileID: 0}
+  playerHealthSliderFillImage: {fileID: 0}
+  hpBarPulse: {fileID: 0}
+  deathEffect: {fileID: 100010, guid: 714fe68d1bdbba84f9ee530135492817, type: 3}
   hitEffect: {fileID: 6229913163069739088, guid: d6029318d740811488fd5dd38a7e1ce1, type: 3}
 --- !u!50 &7984322426472249331
 Rigidbody2D:
@@ -259,12 +271,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab8d4a72e33c35247a163b0ded57304e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  scoreValue: 5
+  moveSpeed: 3
+  scoreValue: 300
+  victoryEffect: {fileID: 6671380785883311296, guid: 1dbb1fe3f1006ce4b89f203ed833e04e, type: 3}
+  drop: {fileID: 100002, guid: 7d67e0391dbe4da4081c5517d626b2c8, type: 3}
   followTarget: {fileID: 0}
-  followRange: 40
+  followRange: 50
   gameMusicPlayer: {fileID: 0}
-  bossTrack: {fileID: 8300000, guid: ac8d6aaac55974b42bb1404813040c40, type: 3}
+  bossTrack: {fileID: 8300000, guid: 62a9141a1932a70469ba03c2cf34c340, type: 3}
   mainTrackForTheLevel: {fileID: 8300000, guid: 3a2ce2cc48514564fa06d6f078d52779, type: 3}
   guns:
   - {fileID: 2319798595913065395}
@@ -327,7 +341,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7125813286935845035, guid: e903e268f1c00834c8e490d6931613ec, type: 3}
+      propertyPath: maxSpawn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7125813286935845035, guid: e903e268f1c00834c8e490d6931613ec, type: 3}
       propertyPath: spawnDelay
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7125813286935845035, guid: e903e268f1c00834c8e490d6931613ec, type: 3}
+      propertyPath: spawnInfinite
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7125813286935845035, guid: e903e268f1c00834c8e490d6931613ec, type: 3}
@@ -397,7 +419,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7125813286935845035, guid: e903e268f1c00834c8e490d6931613ec, type: 3}
+      propertyPath: maxSpawn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7125813286935845035, guid: e903e268f1c00834c8e490d6931613ec, type: 3}
       propertyPath: spawnDelay
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7125813286935845035, guid: e903e268f1c00834c8e490d6931613ec, type: 3}
+      propertyPath: spawnInfinite
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7125813286935845035, guid: e903e268f1c00834c8e490d6931613ec, type: 3}

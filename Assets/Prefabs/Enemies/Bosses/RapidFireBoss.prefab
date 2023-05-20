@@ -49,6 +49,15 @@ MonoBehaviour:
   isPlayerControlled: 0
   fireRate: 0.3
   projectileSpread: 1
+  maxHeat: 100
+  heatDissipationRate: 20
+  heatRate: 10
+  currentHeat: 0
+  cooldownTime: 2
+  isCoolingDown: 0
+  cooldownTimer: 0
+  overHeatBarSlider: {fileID: 0}
+  overHeatBarAnim: {fileID: 0}
   fireEffect: {fileID: 6229913163069739088, guid: a499391aa95bee24ab8e999366f75fe4, type: 3}
 --- !u!1 &1563876657
 GameObject:
@@ -99,6 +108,15 @@ MonoBehaviour:
   isPlayerControlled: 0
   fireRate: 0.3
   projectileSpread: 1
+  maxHeat: 100
+  heatDissipationRate: 20
+  heatRate: 10
+  currentHeat: 0
+  cooldownTime: 2
+  isCoolingDown: 0
+  cooldownTimer: 0
+  overHeatBarSlider: {fileID: 0}
+  overHeatBarAnim: {fileID: 0}
   fireEffect: {fileID: 6229913163069739088, guid: a499391aa95bee24ab8e999366f75fe4, type: 3}
 --- !u!1 &6239782709773395061
 GameObject:
@@ -149,6 +167,15 @@ MonoBehaviour:
   isPlayerControlled: 0
   fireRate: 5
   projectileSpread: 1
+  maxHeat: 100
+  heatDissipationRate: 20
+  heatRate: 10
+  currentHeat: 0
+  cooldownTime: 2
+  isCoolingDown: 0
+  cooldownTimer: 0
+  overHeatBarSlider: {fileID: 0}
+  overHeatBarAnim: {fileID: 0}
   fireEffect: {fileID: 6229913163069739088, guid: a499391aa95bee24ab8e999366f75fe4, type: 3}
 --- !u!1 &6239782710599728975
 GameObject:
@@ -320,6 +347,9 @@ MonoBehaviour:
   maximumLives: 5
   BosshealthSlider: {fileID: 0}
   bossNameText: {fileID: 0}
+  playerHealthSlider: {fileID: 0}
+  playerHealthSliderFillImage: {fileID: 0}
+  hpBarPulse: {fileID: 0}
   deathEffect: {fileID: 2452382815751308013, guid: 990f3751046a4d840806774f23579fe2, type: 3}
   hitEffect: {fileID: 6229913163069739088, guid: d6029318d740811488fd5dd38a7e1ce1, type: 3}
 --- !u!50 &1758584362768789554
@@ -357,8 +387,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   scoreValue: 5
+  victoryEffect: {fileID: 6671380785883311296, guid: 1dbb1fe3f1006ce4b89f203ed833e04e, type: 3}
+  itemDropChance: 1
+  items:
+  - {fileID: 1644646541068461074, guid: b6539f59ae885b74da3a1520b2852655, type: 3}
   followTarget: {fileID: 0}
-  followRange: 10
+  followRange: 40
+  gameMusicPlayer: {fileID: 0}
+  bossTrack: {fileID: 0}
+  mainTrackForTheLevel: {fileID: 0}
   guns:
   - {fileID: 6239782709773395058}
   - {fileID: 1563876658}

@@ -85,6 +85,7 @@ public class Health : MonoBehaviour
     void Update()
     {
         InvincibilityCheck();
+        SetHealthBar();
     }
 
     // The specific game time when the health can be damged again
@@ -137,7 +138,7 @@ public class Health : MonoBehaviour
     {
         transform.position = respawnPosition;
         currentHealth = defaultHealth;
-        SetHealthBarColor();
+        SetHealthBar();
 
     }
 
@@ -172,12 +173,12 @@ public class Health : MonoBehaviour
                 BosshealthSlider.value = currentHealth / maximumHealth;
             }
 
-            SetHealthBarColor();
+            SetHealthBar();
             CheckDeath();
         }
     }
 
-    private void SetHealthBarColor()
+    private void SetHealthBar()
     {
         if (gameObject.tag == "Player")
         {
@@ -190,6 +191,7 @@ public class Health : MonoBehaviour
             else if (playerHealthSlider.value >= 0.3f)
             {
                 playerHealthSliderFillImage.color = mediumColor;
+                hpBarPulse.SetInteger("AnimState", 0);
             }
             else
             {

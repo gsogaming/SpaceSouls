@@ -184,6 +184,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 2
   scoreValue: 5
+  itemDropChance: 0.05
+  items:
+  - {fileID: 1644646541068461074, guid: b6539f59ae885b74da3a1520b2852655, type: 3}
+  - {fileID: 2358403804912602555, guid: e9048ae1c0cb6324eb68da68c6f42612, type: 3}
   followTarget: {fileID: 0}
   followRange: 30
   guns:

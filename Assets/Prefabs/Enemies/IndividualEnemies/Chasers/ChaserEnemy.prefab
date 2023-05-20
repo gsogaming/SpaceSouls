@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8890150608144808246}
   - component: {fileID: 4413798097735496473}
   - component: {fileID: -7804707091471299601}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: ChaserEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -123,10 +123,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86999d6afe103ad4c881a51052cc6b35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 10
   scoreValue: 10
+  itemDropChance: 0.05
+  items:
+  - {fileID: 1644646541068461074, guid: b6539f59ae885b74da3a1520b2852655, type: 3}
+  - {fileID: 2358403804912602555, guid: e9048ae1c0cb6324eb68da68c6f42612, type: 3}
   followTarget: {fileID: 0}
-  followRange: 100
+  followRange: 25
   guns: []
   shootMode: 1
   movementMode: 1
@@ -143,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52c9a4613bbc6ce4b809b21678067793, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamId: 1
+  teamId: -1
   defaultHealth: 3
   maximumHealth: 3
   currentHealth: 3
@@ -157,8 +161,8 @@ MonoBehaviour:
   playerHealthSlider: {fileID: 0}
   playerHealthSliderFillImage: {fileID: 0}
   hpBarPulse: {fileID: 0}
-  deathEffect: {fileID: 2452382815751308013, guid: 990f3751046a4d840806774f23579fe2, type: 3}
-  hitEffect: {fileID: 6229913163069739088, guid: d6029318d740811488fd5dd38a7e1ce1, type: 3}
+  deathEffect: {fileID: 100006, guid: 9f18ee4ac76f92f469346d34cc24cb9c, type: 3}
+  hitEffect: {fileID: 100000, guid: 3d84922c38d7c444782fb1a791d97b21, type: 3}
 --- !u!50 &5724781533654324104
 Rigidbody2D:
   serializedVersion: 4
@@ -246,7 +250,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9868031c4e6de6b47a725192ecf4d472, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1.5
   Loop: 1
   Mute: 0

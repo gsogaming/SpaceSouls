@@ -12,6 +12,12 @@ public class Enemy : MonoBehaviour
     public float moveSpeed = 5;
     [Tooltip("The score value for defeating this enemy")]
     public int scoreValue = 5;
+    [Tooltip("The item drop chance after defeating this enemy")]
+    public float itemDropChance = 1;
+    [Tooltip("The items to drop after defeating this enemy")]
+    public GameObject[]  items;
+
+
 
     [Header("Following Settings")]
     [Tooltip("The transform of the object that this enemy should follow.")]
@@ -115,6 +121,7 @@ public class Enemy : MonoBehaviour
     {
         AddToScore();
         IncrementEnemiesDefeated();
+        DropItem();
     }
 
     /// <summary>
@@ -340,7 +347,18 @@ public class Enemy : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, followRange);
     }
 
-    
+    private void DropItem()
+    {
+        if (items != null)
+        {
+            if (Random.value < itemDropChance)
+            {
+                int randomIndex = Random.Range(0, items.Length);
+                Instantiate(items[randomIndex], transform.position, Quaternion.identity);
+            }
+        }
+        
+    }
 
 
 }
