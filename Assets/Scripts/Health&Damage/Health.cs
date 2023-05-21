@@ -166,7 +166,8 @@ public class Health : MonoBehaviour
             timeToBecomeDamagableAgain = Time.time + invincibilityTime;
             isInvincableFromDamage = true;
             currentHealth -= damageAmount;
-            if (gameObject.tag == "Boss")
+
+            if (gameObject.tag == "Boss" && bossNameText != null && BosshealthSlider != null)
             {
                 bossNameText.text = gameObject.name;
                 BosshealthSlider.gameObject.SetActive(true);
@@ -180,8 +181,11 @@ public class Health : MonoBehaviour
 
     private void SetHealthBar()
     {
+
+
         if (gameObject.tag == "Player")
         {
+
             playerHealthSlider.value = currentHealth / maximumHealth;
 
             if (playerHealthSlider.value >= 0.75f)
@@ -241,7 +245,7 @@ public class Health : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
-            if (gameObject.tag == "Boss")
+            if (gameObject.tag == "Boss" && BosshealthSlider != null)
             {
                 BosshealthSlider.gameObject.SetActive(false);
             }
@@ -328,7 +332,7 @@ public class Health : MonoBehaviour
         {
             GameManager.instance.GameOver();
         }
-        else if (gameObject.tag == "Player" && GameManagerArena.instance != null)
+        if (gameObject.tag == "Player" && GameManagerArena.instance != null)
         {
             GameManagerArena.instance.GameOver();
         }

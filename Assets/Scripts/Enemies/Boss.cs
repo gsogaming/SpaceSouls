@@ -130,11 +130,14 @@ public class Boss : MonoBehaviour
             // Attempt to shoot, according to this enemy's shooting mode
             TryToShoot();
 
-            if (gameMusicPlayer.clip != bossTrack)
+            if (gameMusicPlayer != null)
             {
-                gameMusicPlayer.clip = bossTrack;
-                gameMusicPlayer.Play();
-            }
+                if (gameMusicPlayer.clip != bossTrack)
+                {
+                    gameMusicPlayer.clip = bossTrack;
+                    gameMusicPlayer.Play();
+                }
+            }            
             
         }
     }
@@ -158,10 +161,15 @@ public class Boss : MonoBehaviour
         if (victoryEffect != null)
         {
             Instantiate(victoryEffect, transform.position, transform.rotation, null);
-        }       
+        }
 
-        gameMusicPlayer.clip = mainTrackForTheLevel;
-        gameMusicPlayer.Play();
+        if (gameMusicPlayer != null)
+        {
+            gameMusicPlayer.clip = mainTrackForTheLevel;
+            gameMusicPlayer.Play();
+        }
+
+        
     }
 
     /// <summary>
@@ -422,6 +430,10 @@ public class Boss : MonoBehaviour
                 int randomIndex = Random.Range(0, items.Length);
                 Instantiate(items[randomIndex], transform.position, Quaternion.identity);
             }
+        }
+        else
+        {
+            return;
         }
 
     }
