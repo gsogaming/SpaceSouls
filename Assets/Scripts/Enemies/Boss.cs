@@ -103,6 +103,10 @@ public class Boss : MonoBehaviour
             {
                 followTarget = GameManager.instance.player.transform;
             }
+            else if (GameManagerArena.instance != null && GameManagerArena.instance.player != null)
+            {
+                followTarget = GameManagerArena.instance.player.transform;
+            }
         }
 
          
@@ -174,6 +178,10 @@ public class Boss : MonoBehaviour
         {
             GameManager.AddScore(scoreValue);
         }
+        else if (GameManagerArena.instance != null && !GameManagerArena.instance.gameIsOver)
+        {
+            GameManagerArena.AddScore(scoreValue);
+        }
     }
 
     /// <summary>
@@ -205,6 +213,10 @@ public class Boss : MonoBehaviour
         if (GameManager.instance != null && !GameManager.instance.gameIsOver)
         {
             GameManager.instance.IncrementBossesDefeated();
+        }
+        else if (GameManagerArena.instance != null && !GameManagerArena.instance.gameIsOver)
+        {
+            GameManagerArena.instance.IncrementBossesDefeated();
         }
     }
 

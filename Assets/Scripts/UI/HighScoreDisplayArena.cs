@@ -7,7 +7,7 @@ using TMPro;
 /// <summary>
 /// This class inherits from the UIelement class and handles the display of the high score
 /// </summary>
-public class HighScoreDisplay : UIelement
+public class HighScoreDisplayArena : UIelement
 {
     [Tooltip("The text UI to use for display")]
     public TextMeshProUGUI displayText = null;
@@ -24,9 +24,8 @@ public class HighScoreDisplay : UIelement
     {
         if (displayText != null)
         {
-            displayText.text = "High Score: " + GameManager.instance.highScore.ToString();
+            displayText.text = "High Score: " + GameManagerArena.instance.highScore.ToString();
         }
-        
     }
 
     /// <summary>

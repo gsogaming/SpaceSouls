@@ -69,7 +69,11 @@ public class UIManager : MonoBehaviour
         if (GameManager.instance != null && GameManager.instance.uiManager == null)
         {
             GameManager.instance.uiManager = this;
-        }     
+        }
+        else if (GameManagerArena.instance != null && GameManagerArena.instance.uiManager == null)
+        {
+            GameManagerArena.instance.uiManager = this;
+        }
     }
 
     /// <summary>

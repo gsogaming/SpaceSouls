@@ -85,6 +85,10 @@ public class Enemy : MonoBehaviour
             {
                 followTarget = GameManager.instance.player.transform;
             }
+            else if (GameManagerArena.instance != null && GameManagerArena.instance.player != null)
+            {
+                followTarget = GameManagerArena.instance.player.transform;
+            }
         }
     }
 
@@ -136,7 +140,11 @@ public class Enemy : MonoBehaviour
     {
         if (GameManager.instance != null && !GameManager.instance.gameIsOver)
         {
-            GameManager.AddScore(scoreValue);
+            GameManager.AddScore(scoreValue);            
+        }
+        else if (GameManagerArena.instance != null && !GameManagerArena.instance.gameIsOver)
+        {
+            GameManagerArena.AddScore(scoreValue);
         }
     }
 
@@ -153,7 +161,11 @@ public class Enemy : MonoBehaviour
         if (GameManager.instance != null && !GameManager.instance.gameIsOver)
         {
             GameManager.instance.IncrementEnemiesDefeated();
-        }       
+        }
+        else if (GameManagerArena.instance != null && !GameManagerArena.instance.gameIsOver)
+        {
+            GameManagerArena.instance.IncrementEnemiesDefeated();
+        }
     }
 
     /// <summary>

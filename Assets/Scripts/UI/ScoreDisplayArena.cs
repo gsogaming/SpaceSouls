@@ -5,33 +5,32 @@ using UnityEngine.UI;
 using TMPro;
 
 /// <summary>
-/// This class inherits from the UIelement class and handles the display of the high score
+/// This class inherits for the UIelement class and handles updating the score display
 /// </summary>
-public class HighScoreDisplay : UIelement
+public class ScoreDisplayArena : UIelement
 {
     [Tooltip("The text UI to use for display")]
     public TextMeshProUGUI displayText = null;
 
     /// <summary>
     /// Description:
-    /// Changes the high score display
+    /// Updates the score display
     /// Inputs:
     /// none
     /// Returns:
     /// void (no return)
     /// </summary>
-    public void DisplayHighScore()
+    public void DisplayScore()
     {
         if (displayText != null)
         {
-            displayText.text = "High Score: " + GameManager.instance.highScore.ToString();
+            displayText.text = "Score: " + GameManagerArena.score.ToString();
         }
-        
     }
 
     /// <summary>
     /// Description:
-    /// Overrides the virtual function UpdateUI() of the UIelement class and uses the DisplayHighScore function to update
+    /// Overides the virtual UpdateUI function and uses the DisplayScore to update the score display
     /// Inputs:
     /// none
     /// Returns:
@@ -43,6 +42,6 @@ public class HighScoreDisplay : UIelement
         base.UpdateUI();
 
         // The remaining code is only called for this sub-class of UIelement and not others
-        DisplayHighScore();
+        DisplayScore();
     }
 }

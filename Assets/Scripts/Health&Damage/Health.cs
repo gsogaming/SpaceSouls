@@ -187,6 +187,7 @@ public class Health : MonoBehaviour
             if (playerHealthSlider.value >= 0.75f)
             {
                 playerHealthSliderFillImage.color = fullColor;
+                hpBarPulse.SetInteger("AnimState", 0);
             }
             else if (playerHealthSlider.value >= 0.3f)
             {
@@ -297,6 +298,10 @@ public class Health : MonoBehaviour
             {
                 GameManager.instance.GameOver();
             }
+            else if (gameObject.tag == "Player" && GameManagerArena.instance != null)
+            {
+                GameManagerArena.instance.GameOver();
+            }
             if (gameObject.GetComponent<Enemy>() != null)
             {
                 gameObject.GetComponent<Enemy>().DoBeforeDestroy();
@@ -322,6 +327,10 @@ public class Health : MonoBehaviour
         if (gameObject.tag == "Player" && GameManager.instance != null)
         {
             GameManager.instance.GameOver();
+        }
+        else if (gameObject.tag == "Player" && GameManagerArena.instance != null)
+        {
+            GameManagerArena.instance.GameOver();
         }
         if (gameObject.GetComponent<Enemy>() != null)
         {
