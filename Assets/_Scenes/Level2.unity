@@ -2509,14 +2509,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   challengeLevels:
   - {fileID: 714587974}
-  - {fileID: 88644895}
-  - {fileID: 563554137}
-  - {fileID: 1397804405}
   currentLevelPrefab: {fileID: 0}
   numberOfEnemiesToDefeat: 10
   enemiesDefeated: 0
   bossesDefeated: 0
   challengeIsCompleted: 0
+  powerUpPopUp: {fileID: 650039616}
+  winScreen: {fileID: 1034542368}
   warningText: {fileID: 1078615677}
   objectiveText: {fileID: 2074456574}
   numberOfBosses: 0
@@ -3831,6 +3830,11 @@ PrefabInstance:
     - {fileID: 3098884713826794650, guid: 4a009278bd43c0e4c9bca70b6fd5fd66, type: 3}
     - {fileID: 7503267589119741575, guid: 4a009278bd43c0e4c9bca70b6fd5fd66, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4a009278bd43c0e4c9bca70b6fd5fd66, type: 3}
+--- !u!1 &650039616 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4435474538672949187, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
+  m_PrefabInstance: {fileID: 901209905}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &682049590
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4728,9 +4732,40 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1096510399564601377, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138155848323535958, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
+      propertyPath: m_text
+      value: 'YOU WON!
+
+
+        CONGRATULATIONS!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138155848323535958, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
+      propertyPath: m_fontSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138155848323535958, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409224415824230354, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
+      propertyPath: m_text
+      value: MAIN MENU
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409224415824230354, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
+      propertyPath: m_fontSize
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 4119780372436084502, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435474538672949187, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6160193086099037457, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
@@ -4840,6 +4875,30 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: TogglePause
       objectReference: {fileID: 0}
+    - target: {fileID: 8584112445897903032, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8584112445897903032, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2088853359}
+    - target: {fileID: 8584112445897903032, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ApplyHealthPowerup
+      objectReference: {fileID: 0}
+    - target: {fileID: 8584112445897903032, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ArenaPowerUpUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8584112445897903032, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8584112445897903032, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8788812906616315725, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -4848,10 +4907,39 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8798007057076417626, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8798007057076417626, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8798007057076417626, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1682225574}
+    - target: {fileID: 8798007057076417626, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ApplyFireRatePowerup
+      objectReference: {fileID: 0}
+    - target: {fileID: 8798007057076417626, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ArenaPowerUpUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8798007057076417626, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8798007057076417626, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7753595102602222588, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
     - {fileID: 6736180557471979498, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
     - {fileID: 1899416747395874039, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
+    - {fileID: 7411962159232902517, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
 --- !u!95 &903519530 stripped
 Animator:
@@ -5224,6 +5312,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8282131552441171986, guid: 576cba70e4daccf488dda522850ba325, type: 3}
   m_PrefabInstance: {fileID: 1027760883}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1034542368 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1096510399564601377, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
+  m_PrefabInstance: {fileID: 901209905}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1078615677 stripped
 MonoBehaviour:
@@ -5970,7 +6063,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6125314356152840548, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
   m_PrefabInstance: {fileID: 901209905}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1034542368}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a37851aa441366846870e1fea7847f59, type: 3}
@@ -7349,6 +7442,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8865602938096748477, guid: 80cddaf3331da224396dc553f430d1ac, type: 3}
+      propertyPath: fireRate
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8865602938096748477, guid: 80cddaf3331da224396dc553f430d1ac, type: 3}
       propertyPath: heatRate
       value: 50
       objectReference: {fileID: 0}
@@ -7407,6 +7504,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8282131552441171986, guid: 576cba70e4daccf488dda522850ba325, type: 3}
   m_PrefabInstance: {fileID: 303863961}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1682225567 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1704337469254195175, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
+  m_PrefabInstance: {fileID: 901209905}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1682225574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682225567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558891fa6ae67ee4ba2a876c311c5728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1531787171}
+  powerUpUI: {fileID: 650039616}
+  healthIncreaseAmount: 3
+  fireRateDecreaseAmount: 0.9
 --- !u!1001 &1691084565
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8955,6 +9073,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8282131552441171986, guid: 576cba70e4daccf488dda522850ba325, type: 3}
   m_PrefabInstance: {fileID: 2087434224}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2088853353 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4862485736940375854, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
+  m_PrefabInstance: {fileID: 901209905}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2088853359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088853353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558891fa6ae67ee4ba2a876c311c5728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1531787171}
+  powerUpUI: {fileID: 650039616}
+  healthIncreaseAmount: 3
+  fireRateDecreaseAmount: 0.1
 --- !u!4 &2089794741 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8282131552441171986, guid: 576cba70e4daccf488dda522850ba325, type: 3}

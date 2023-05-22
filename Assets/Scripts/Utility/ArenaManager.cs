@@ -25,6 +25,12 @@ public class ArenaManager : MonoBehaviour
     [Tooltip("Challenge completed or not")]
     public bool challengeIsCompleted;
 
+    [Tooltip("UI PowerUp pop-up when the level Wave is completed")]
+    public GameObject powerUpPopUp;
+
+    [Tooltip("Winning Screen")]
+    public GameObject winScreen;
+
     [Tooltip("Texts for the challenge warnings and objectives")]
     public TextMeshProUGUI warningText;
     public TextMeshProUGUI objectiveText;
@@ -138,7 +144,16 @@ public class ArenaManager : MonoBehaviour
         challengeIsCompleted = true;
         currentLevelPrefab.SetActive(false);
         numberOfEnemiesToDefeat = 0;
-        StartCoroutine(StartNextWaveDelay());
+        if (currentWaveIndex < challengeLevels.Count)
+        {
+            StartCoroutine(StartNextWaveDelay());
+        }
+        else
+        {
+            winScreen.SetActive(true);
+            Time.timeScale = 0;
+        }
+        
     }
 
     private IEnumerator StartNextWaveDelay()
@@ -151,6 +166,8 @@ public class ArenaManager : MonoBehaviour
         warningText.text = "Wave Completed";
         yield return new WaitForSeconds(3f);
 
+        powerUpPopUp.SetActive(true);
+        Time.timeScale = 0;
         warningText.gameObject.SetActive(false);
         warningText.gameObject.SetActive(true);
         warningText.fontSize = 20;
