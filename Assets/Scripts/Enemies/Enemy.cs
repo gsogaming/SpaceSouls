@@ -17,6 +17,8 @@ public class Enemy : MonoBehaviour
     [Tooltip("The items to drop after defeating this enemy")]
     public GameObject[]  items;
 
+    public bool hasExitedArena = false;
+
 
 
     [Header("Following Settings")]

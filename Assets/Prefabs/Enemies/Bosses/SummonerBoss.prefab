@@ -49,6 +49,15 @@ MonoBehaviour:
   isPlayerControlled: 0
   fireRate: 5
   projectileSpread: 0
+  maxHeat: 100
+  heatDissipationRate: 20
+  heatRate: 10
+  currentHeat: 0
+  cooldownTime: 2
+  isCoolingDown: 0
+  cooldownTimer: 0
+  overHeatBarSlider: {fileID: 0}
+  overHeatBarAnim: {fileID: 0}
   fireEffect: {fileID: 6229913163069739088, guid: a499391aa95bee24ab8e999366f75fe4, type: 3}
 --- !u!1 &7554034152955368802
 GameObject:
@@ -99,6 +108,15 @@ MonoBehaviour:
   isPlayerControlled: 0
   fireRate: 1
   projectileSpread: 1
+  maxHeat: 100
+  heatDissipationRate: 20
+  heatRate: 10
+  currentHeat: 0
+  cooldownTime: 2
+  isCoolingDown: 0
+  cooldownTimer: 0
+  overHeatBarSlider: {fileID: 0}
+  overHeatBarAnim: {fileID: 0}
   fireEffect: {fileID: 6229913163069739088, guid: a499391aa95bee24ab8e999366f75fe4, type: 3}
 --- !u!1 &7554034154285010520
 GameObject:
@@ -228,6 +246,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 0
   scoreValue: 10
+  itemDropChance: 1
+  items:
+  - {fileID: 2358403804912602555, guid: e9048ae1c0cb6324eb68da68c6f42612, type: 3}
   followTarget: {fileID: 0}
   followRange: 20
   guns:
@@ -260,6 +281,9 @@ MonoBehaviour:
   maximumLives: 5
   BosshealthSlider: {fileID: 0}
   bossNameText: {fileID: 0}
+  playerHealthSlider: {fileID: 0}
+  playerHealthSliderFillImage: {fileID: 0}
+  hpBarPulse: {fileID: 0}
   deathEffect: {fileID: 2452382815751308013, guid: 990f3751046a4d840806774f23579fe2, type: 3}
   hitEffect: {fileID: 6229913163069739088, guid: d6029318d740811488fd5dd38a7e1ce1, type: 3}
 --- !u!50 &2750226523043381541
@@ -366,6 +390,15 @@ MonoBehaviour:
   isPlayerControlled: 0
   fireRate: 1
   projectileSpread: 1
+  maxHeat: 100
+  heatDissipationRate: 20
+  heatRate: 10
+  currentHeat: 0
+  cooldownTime: 2
+  isCoolingDown: 0
+  cooldownTimer: 0
+  overHeatBarSlider: {fileID: 0}
+  overHeatBarAnim: {fileID: 0}
   fireEffect: {fileID: 6229913163069739088, guid: a499391aa95bee24ab8e999366f75fe4, type: 3}
 --- !u!1001 &1695117790586147823
 PrefabInstance:

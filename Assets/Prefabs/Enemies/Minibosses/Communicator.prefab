@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &482712759751930748
+--- !u!1 &3172453661952698882
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,104 +8,44 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 482712759751930746}
-  - component: {fileID: 482712759751930747}
-  m_Layer: 9
-  m_Name: GunOne
-  m_TagString: Untagged
-  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &482712759751930746
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 482712759751930748}
-  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -0.764, y: -0.14, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 482712761047885891}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
---- !u!114 &482712759751930747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 482712759751930748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f75388997f8d4264a86b7441dc9ea74e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 4641165794769155162, guid: 5089b9cd653abda4ba6013a20e42c774, type: 3}
-  projectileHolder: {fileID: 0}
-  isPlayerControlled: 0
-  fireRate: 3
-  projectileSpread: 1
-  maxHeat: 100
-  heatDissipationRate: 20
-  heatRate: 10
-  currentHeat: 0
-  cooldownTime: 2
-  isCoolingDown: 0
-  cooldownTimer: 0
-  overHeatBarSlider: {fileID: 0}
-  overHeatBarAnim: {fileID: 0}
-  fireEffect: {fileID: 6229913163069739088, guid: a499391aa95bee24ab8e999366f75fe4, type: 3}
---- !u!1 &482712761047885894
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 482712761047885891}
-  - component: {fileID: 482712761047885892}
-  - component: {fileID: 482712761047885893}
-  - component: {fileID: 482712761047885890}
-  - component: {fileID: 1951668710875448492}
-  - component: {fileID: 5209933366073681723}
-  - component: {fileID: 8962106436055846277}
+  - component: {fileID: 3172453661952698887}
+  - component: {fileID: 3172453661952698880}
+  - component: {fileID: 3172453661952698881}
+  - component: {fileID: 3172453661952698886}
+  - component: {fileID: 3576307963018905320}
+  - component: {fileID: 7131810331082073471}
+  - component: {fileID: 6263360483404058561}
   m_Layer: 7
-  m_Name: Knight
+  m_Name: Communicator
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &482712761047885891
+--- !u!4 &3172453661952698887
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 482712761047885894}
+  m_GameObject: {fileID: 3172453661952698882}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 46, y: 168.3, z: 0}
+  m_LocalPosition: {x: -95, y: -91, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 482712759751930746}
-  - {fileID: 482712761283773458}
-  - {fileID: 8377533643829271888}
+  - {fileID: 3172453662778896702}
+  - {fileID: 3172453662186489430}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &482712761047885892
+--- !u!212 &3172453661952698880
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 482712761047885894}
+  m_GameObject: {fileID: 3172453661952698882}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -140,10 +80,10 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6604310613814641884, guid: 35293284ff3944d4d8c1f7ca980df347, type: 3}
+  m_Sprite: {fileID: 21300084, guid: 8d18f6d2b73e89b4882fbf3bb5aedb4b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
-  m_FlipY: 0
+  m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 1.4375, y: 1.09375}
   m_AdaptiveModeThreshold: 0.5
@@ -151,17 +91,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &482712761047885893
+--- !u!95 &3172453661952698881
 Animator:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 482712761047885894}
+  m_GameObject: {fileID: 3172453661952698882}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 809ff1ddd8b6a4f45a7ad1630932ea75, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9125a087326c22c46a2f6bc11c643de3, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -171,13 +111,13 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &482712761047885890
+--- !u!114 &3172453661952698886
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 482712761047885894}
+  m_GameObject: {fileID: 3172453661952698882}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86999d6afe103ad4c881a51052cc6b35, type: 3}
@@ -192,19 +132,18 @@ MonoBehaviour:
   followTarget: {fileID: 0}
   followRange: 30
   guns:
-  - {fileID: 482712759751930747}
-  - {fileID: 482712761283773459}
-  - {fileID: 8377533643829271891}
+  - {fileID: 3172453662778896703}
+  - {fileID: 3172453662186489431}
   shootMode: 1
   movementMode: 1
   scrollDirection: {x: 1, y: 0, z: 0}
---- !u!114 &1951668710875448492
+--- !u!114 &3576307963018905320
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 482712761047885894}
+  m_GameObject: {fileID: 3172453661952698882}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 52c9a4613bbc6ce4b809b21678067793, type: 3}
@@ -226,14 +165,14 @@ MonoBehaviour:
   hpBarPulse: {fileID: 0}
   deathEffect: {fileID: 100002, guid: 646d8ce832714ff4d9fb29973186759e, type: 3}
   hitEffect: {fileID: 1327168884979346, guid: 689f756a18148944f9fb2d821566b198, type: 3}
---- !u!50 &5209933366073681723
+--- !u!50 &7131810331082073471
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 482712761047885894}
+  m_GameObject: {fileID: 3172453661952698882}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -247,13 +186,13 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!60 &8962106436055846277
+--- !u!60 &6263360483404058561
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 482712761047885894}
+  m_GameObject: {fileID: 3172453661952698882}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -264,7 +203,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.4375, y: 1.09375}
+    oldSize: {x: 0.8, y: 0.8}
     newSize: {x: 1.4375, y: 1.09375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -277,11 +216,11 @@ PolygonCollider2D:
       - {x: -0.41783214, y: 0.012124777}
       - {x: -0.41783214, y: -0.14605439}
       - {x: -0.4107151, y: -0.15775728}
-      - {x: 0.01616764, y: -0.53649855}
+      - {x: 0.026780128, y: -0.22872877}
       - {x: 0.4437735, y: -0.13073087}
       - {x: 0.44377327, y: -0.06328368}
       - {x: 0.43339705, y: 0.021777749}
---- !u!1 &482712761283773460
+--- !u!1 &3172453662186489424
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -289,8 +228,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 482712761283773458}
-  - component: {fileID: 482712761283773459}
+  - component: {fileID: 3172453662186489430}
+  - component: {fileID: 3172453662186489431}
   m_Layer: 9
   m_Name: GunTwo
   m_TagString: Untagged
@@ -298,28 +237,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &482712761283773458
+--- !u!4 &3172453662186489430
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 482712761283773460}
+  m_GameObject: {fileID: 3172453662186489424}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 0.719, y: -0.113, z: 0}
+  m_LocalPosition: {x: 0.3, y: -0.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 482712761047885891}
+  m_Father: {fileID: 3172453661952698887}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
---- !u!114 &482712761283773459
+--- !u!114 &3172453662186489431
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 482712761283773460}
+  m_GameObject: {fileID: 3172453662186489424}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f75388997f8d4264a86b7441dc9ea74e, type: 3}
@@ -328,8 +267,8 @@ MonoBehaviour:
   projectilePrefab: {fileID: 4641165794769155162, guid: 5089b9cd653abda4ba6013a20e42c774, type: 3}
   projectileHolder: {fileID: 0}
   isPlayerControlled: 0
-  fireRate: 3
-  projectileSpread: 1
+  fireRate: 1
+  projectileSpread: 2
   maxHeat: 100
   heatDissipationRate: 20
   heatRate: 10
@@ -340,7 +279,7 @@ MonoBehaviour:
   overHeatBarSlider: {fileID: 0}
   overHeatBarAnim: {fileID: 0}
   fireEffect: {fileID: 6229913163069739088, guid: a499391aa95bee24ab8e999366f75fe4, type: 3}
---- !u!1 &8377533643829271889
+--- !u!1 &3172453662778896696
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -348,37 +287,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8377533643829271888}
-  - component: {fileID: 8377533643829271891}
+  - component: {fileID: 3172453662778896702}
+  - component: {fileID: 3172453662778896703}
   m_Layer: 9
-  m_Name: GunThree
+  m_Name: GunOne
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8377533643829271888
+--- !u!4 &3172453662778896702
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8377533643829271889}
+  m_GameObject: {fileID: 3172453662778896696}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 0.004, y: -0.102, z: 0}
+  m_LocalPosition: {x: -0.29, y: -0.37, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 482712761047885891}
-  m_RootOrder: 2
+  m_Father: {fileID: 3172453661952698887}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
---- !u!114 &8377533643829271891
+--- !u!114 &3172453662778896703
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8377533643829271889}
+  m_GameObject: {fileID: 3172453662778896696}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f75388997f8d4264a86b7441dc9ea74e, type: 3}
@@ -388,7 +327,7 @@ MonoBehaviour:
   projectileHolder: {fileID: 0}
   isPlayerControlled: 0
   fireRate: 1
-  projectileSpread: 1
+  projectileSpread: 2
   maxHeat: 100
   heatDissipationRate: 20
   heatRate: 10

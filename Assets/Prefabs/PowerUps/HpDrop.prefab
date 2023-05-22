@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireRateIncrement: 0
-  hpIncrease: 2
+  hpIncrease: 3
 --- !u!1 &2358403805042787277
 GameObject:
   m_ObjectHideFlags: 0

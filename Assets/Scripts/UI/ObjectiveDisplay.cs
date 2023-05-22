@@ -36,7 +36,7 @@ public class ObjectiveDisplay : UIelement
         if (displayText != null && gameManager.bossesToDefeat > gameManager.bossesDefeated)
         {
             displayText.text = "Objectives: Kill " +
-                (gameManager.bossesToDefeat - gameManager.bossesDefeated) + " boss(es) to finish level";                 
+                (gameManager.bossesToDefeat - gameManager.bossesDefeated) + " boss(es)";                 
         }
 
         if (displayText != null && gameManager.bossesToDefeat == gameManager.bossesDefeated && gameManager.enemiesDefeated < gameManager.enemiesToDefeat)

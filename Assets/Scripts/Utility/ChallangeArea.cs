@@ -6,7 +6,7 @@ using TMPro;
 public class ChallangeArea : MonoBehaviour
 {
 
-    public List<GameObject> spawners;
+    public List<GameObject> enemies;
 
     [Tooltip("Challenge Door")]
     public GameObject challengeAreaDoor;
@@ -63,9 +63,9 @@ public class ChallangeArea : MonoBehaviour
     private void ActivateObjects()
     {
         // Activate the spawners
-        foreach (GameObject spawner in spawners)
+        foreach (GameObject enemy in enemies)
         {
-            spawner.SetActive(true);
+            enemy.SetActive(true);
         }
 
         // Activate the challenge area door
@@ -76,11 +76,11 @@ public class ChallangeArea : MonoBehaviour
     {
         // Activate the spawners
 
-        foreach (GameObject spawner in spawners)
+        foreach (GameObject enemy in enemies)
         {
-            if (spawner != null)
+            if (enemy != null)
             {
-                spawner.SetActive(false);
+                enemy.SetActive(false);
             }
             
         }

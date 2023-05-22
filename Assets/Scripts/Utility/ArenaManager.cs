@@ -62,6 +62,8 @@ public class ArenaManager : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             enemiesDefeated++;
+            objectiveText.text = "Defeat " + (numberOfEnemiesToDefeat - enemiesDefeated) + " enemies";
+
         }
         else if (other.CompareTag("Boss"))
         {
@@ -72,13 +74,20 @@ public class ArenaManager : MonoBehaviour
         {
             // All enemies in the current wave are defeated
             CompleteWave();
-            
+
         }
+    }
+
+    private void Update()
+    {
+
     }
 
     private void StartNextWave()
     {
         challengeIsCompleted = false;
+        numberOfEnemiesToDefeat = 0;
+        bossesDefeated = 0;
         if (currentWaveIndex < challengeLevels.Count)
         {
             // Deactivate the previous wave
@@ -91,23 +100,24 @@ public class ArenaManager : MonoBehaviour
             currentLevelPrefab.SetActive(true);
 
             enemiesDefeated = 0;
-            numberOfEnemies = currentLevelPrefab.transform.childCount;
+            numberOfEnemies = CountEnemiesInWave(currentLevelPrefab);
             numberOfBosses = CountBossesInWave(currentLevelPrefab);
             numberOfRegularEnemies = numberOfEnemies - numberOfBosses;
 
             if (numberOfBosses > 0)
             {
 
-                numberOfEnemiesToDefeat = currentWaveIndex +1  + numberOfBosses;
-                objectiveText.text = "Defat " + numberOfBosses + " bosses" + " and " + currentWaveIndex + " enemies";
-                warningText.text = "Defat " + numberOfBosses + " bosses  and " + currentWaveIndex * 1 + " enemies";
+                objectiveText.text = "Defat " + numberOfBosses + " boss(es)";
+                warningText.text = "Defat " + numberOfBosses + " boss(es)";
             }
             else
-            {
+            {               
+                
+                numberOfEnemiesToDefeat = (currentWaveIndex +1) * 5;
+                
 
-                numberOfEnemiesToDefeat = currentWaveIndex + 1;
-                objectiveText.text = "Defeat " + currentWaveIndex + " enemies";
-                warningText.text = "Defeat " + currentWaveIndex  + " enemies";
+                objectiveText.text = "Defeat " + numberOfEnemiesToDefeat + " enemies";
+                warningText.text = "Defeat " + numberOfEnemiesToDefeat + " enemies";
             }
 
             warningText.fontSize = 20;
@@ -116,7 +126,7 @@ public class ArenaManager : MonoBehaviour
 
 
             currentWaveIndex++;
-            
+
         }
         else
         {
@@ -138,6 +148,19 @@ public class ArenaManager : MonoBehaviour
         return bossCount;
     }
 
+    private int CountEnemiesInWave(GameObject wave)
+    {
+        int enemyCount = 0;
+        foreach (Transform enemy in wave.transform)
+        {
+            if (enemy.CompareTag("Enemy"))
+            {
+                enemyCount++;
+            }
+        }
+        return enemyCount;
+    }
+
     private void CompleteWave()
     {
         // Wave completed
@@ -153,7 +176,7 @@ public class ArenaManager : MonoBehaviour
             winScreen.SetActive(true);
             Time.timeScale = 0;
         }
-        
+
     }
 
     private IEnumerator StartNextWaveDelay()
@@ -171,29 +194,29 @@ public class ArenaManager : MonoBehaviour
         warningText.gameObject.SetActive(false);
         warningText.gameObject.SetActive(true);
         warningText.fontSize = 20;
-        warningText.text = "Next Wave in 5";
+        warningText.text = "Wave " + (currentWaveIndex + 1) + " in 5";
         yield return new WaitForSeconds(1f);
 
         warningText.gameObject.SetActive(false);
         warningText.gameObject.SetActive(true);
-        warningText.text = "Next Wave in 4";
+        warningText.text = "Wave " + (currentWaveIndex + 1) + " in 4";
         yield return new WaitForSeconds(1f);
 
         warningText.gameObject.SetActive(false);
         warningText.gameObject.SetActive(true);
-        warningText.text = "Next Wave in 3";
+        warningText.text = "Wave " + (currentWaveIndex + 1) + " in 3";
         yield return new WaitForSeconds(1f);
 
         warningText.gameObject.SetActive(false);
         warningText.gameObject.SetActive(true);
         warningText.fontSize = 50;
-        warningText.text = "Next Wave in 2";
+        warningText.text = "Wave " + (currentWaveIndex + 1) + " in 2";
         yield return new WaitForSeconds(1f);
 
         warningText.gameObject.SetActive(false);
         warningText.gameObject.SetActive(true);
         warningText.fontSize = 70;
-        warningText.text = "Next Wave in 1";
+        warningText.text = "Wave " + (currentWaveIndex + 1) + " in 1";
         yield return new WaitForSeconds(1f);
 
         StartNextWave();

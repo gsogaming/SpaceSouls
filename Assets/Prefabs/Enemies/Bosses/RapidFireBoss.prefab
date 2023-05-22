@@ -165,15 +165,15 @@ MonoBehaviour:
   projectilePrefab: {fileID: 4641165794769155162, guid: 19ca1195e585ca348bb386c98ddbab9a, type: 3}
   projectileHolder: {fileID: 0}
   isPlayerControlled: 0
-  fireRate: 5
+  fireRate: 0.1
   projectileSpread: 1
   maxHeat: 100
   heatDissipationRate: 20
-  heatRate: 10
+  heatRate: 300
   currentHeat: 0
   cooldownTime: 2
   isCoolingDown: 0
-  cooldownTimer: 0
+  cooldownTimer: -0.009716328
   overHeatBarSlider: {fileID: 0}
   overHeatBarAnim: {fileID: 0}
   fireEffect: {fileID: 6229913163069739088, guid: a499391aa95bee24ab8e999366f75fe4, type: 3}
@@ -198,7 +198,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6239782710599728970
 Transform:
   m_ObjectHideFlags: 0
@@ -392,10 +392,10 @@ MonoBehaviour:
   items:
   - {fileID: 1644646541068461074, guid: b6539f59ae885b74da3a1520b2852655, type: 3}
   followTarget: {fileID: 0}
-  followRange: 40
+  followRange: 30
   gameMusicPlayer: {fileID: 0}
-  bossTrack: {fileID: 0}
-  mainTrackForTheLevel: {fileID: 0}
+  bossTrack: {fileID: 8300000, guid: ac8d6aaac55974b42bb1404813040c40, type: 3}
+  mainTrackForTheLevel: {fileID: 8300000, guid: 3a2ce2cc48514564fa06d6f078d52779, type: 3}
   guns:
   - {fileID: 6239782709773395058}
   - {fileID: 1563876658}
