@@ -222,8 +222,8 @@ MonoBehaviour:
   playerHealthSlider: {fileID: 0}
   playerHealthSliderFillImage: {fileID: 0}
   hpBarPulse: {fileID: 0}
-  deathEffect: {fileID: 2452382815751308013, guid: 990f3751046a4d840806774f23579fe2, type: 3}
-  hitEffect: {fileID: 6229913163069739088, guid: d6029318d740811488fd5dd38a7e1ce1, type: 3}
+  deathEffect: {fileID: 100006, guid: 9f18ee4ac76f92f469346d34cc24cb9c, type: 3}
+  hitEffect: {fileID: 100000, guid: 3d84922c38d7c444782fb1a791d97b21, type: 3}
 --- !u!50 &4327850106528714602
 Rigidbody2D:
   serializedVersion: 4
