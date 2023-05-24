@@ -2141,6 +2141,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7078303656631540612, guid: 4cbb3251b21830b4bb8330bcc35e2b4a, type: 3}
+      propertyPath: orthographic size
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7078303656631540614, guid: 4cbb3251b21830b4bb8330bcc35e2b4a, type: 3}
       propertyPath: m_Name
       value: Large Camera
@@ -6082,6 +6086,7 @@ PrefabInstance:
     - {fileID: 6736180557471979498, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
     - {fileID: 1899416747395874039, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
     - {fileID: 7411962159232902517, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
+    - {fileID: 1182996881, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cb45883111cb1464f874f7c4cbf67cbf, type: 3}
 --- !u!95 &903519530 stripped
 Animator:

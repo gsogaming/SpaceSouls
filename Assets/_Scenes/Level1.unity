@@ -502,11 +502,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8865602938096748352, guid: 80cddaf3331da224396dc553f430d1ac, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.02
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 8865602938096748352, guid: 80cddaf3331da224396dc553f430d1ac, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -18.13
+      value: -16
       objectReference: {fileID: 0}
     - target: {fileID: 8865602938096748352, guid: 80cddaf3331da224396dc553f430d1ac, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17202,6 +17202,10 @@ PrefabInstance:
     - target: {fileID: 7078303656631540611, guid: 4cbb3251b21830b4bb8330bcc35e2b4a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078303656631540612, guid: 4cbb3251b21830b4bb8330bcc35e2b4a, type: 3}
+      propertyPath: orthographic size
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7078303656631540612, guid: 4cbb3251b21830b4bb8330bcc35e2b4a, type: 3}
       propertyPath: m_CullingMask.m_Bits
