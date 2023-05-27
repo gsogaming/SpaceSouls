@@ -502,11 +502,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8865602938096748352, guid: 80cddaf3331da224396dc553f430d1ac, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -77.2
       objectReference: {fileID: 0}
     - target: {fileID: 8865602938096748352, guid: 80cddaf3331da224396dc553f430d1ac, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -19.3
+      value: 199.3
       objectReference: {fileID: 0}
     - target: {fileID: 8865602938096748352, guid: 80cddaf3331da224396dc553f430d1ac, type: 3}
       propertyPath: m_LocalPosition.z
@@ -710,6 +710,7 @@ GameObject:
   m_Component:
   - component: {fileID: 55288789}
   - component: {fileID: 55288788}
+  - component: {fileID: 55288790}
   m_Layer: 0
   m_Name: Frost-Planet
   m_TagString: Untagged
@@ -784,6 +785,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &55288790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55288787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f339fffcee054f040a5b14d4cfba2a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.3
 --- !u!4 &65855501 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6133311919198301996, guid: 4a009278bd43c0e4c9bca70b6fd5fd66, type: 3}
@@ -1150,6 +1164,7 @@ GameObject:
   m_Component:
   - component: {fileID: 110502864}
   - component: {fileID: 110502863}
+  - component: {fileID: 110502865}
   m_Layer: 0
   m_Name: Big_Blackhole
   m_TagString: Untagged
@@ -1224,6 +1239,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &110502865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110502862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f339fffcee054f040a5b14d4cfba2a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.3
 --- !u!1001 &119919166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4951,6 +4979,7 @@ GameObject:
   m_Component:
   - component: {fileID: 265833122}
   - component: {fileID: 265833121}
+  - component: {fileID: 265833123}
   m_Layer: 0
   m_Name: Small_SpaceStation
   m_TagString: Untagged
@@ -5025,6 +5054,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &265833123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265833120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f339fffcee054f040a5b14d4cfba2a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.3
 --- !u!4 &266892642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8282131552441171986, guid: fd821cc36f666d54592388e02f75fcb5, type: 3}
@@ -5755,6 +5797,7 @@ GameObject:
   m_Component:
   - component: {fileID: 298503055}
   - component: {fileID: 298503054}
+  - component: {fileID: 298503056}
   m_Layer: 0
   m_Name: AlienSpaceStation (1)
   m_TagString: Untagged
@@ -5829,6 +5872,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &298503056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298503053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f339fffcee054f040a5b14d4cfba2a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.3
 --- !u!4 &298906781 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8282131552441171986, guid: 69bb62ab0a22b454ab3c1a7e6c5a110a, type: 3}
@@ -6600,6 +6656,7 @@ GameObject:
   m_Component:
   - component: {fileID: 387529111}
   - component: {fileID: 387529110}
+  - component: {fileID: 387529112}
   m_Layer: 0
   m_Name: Lava-PLanet
   m_TagString: Untagged
@@ -6674,6 +6731,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &387529112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387529109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f339fffcee054f040a5b14d4cfba2a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.3
 --- !u!4 &390355274 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6133311919198301996, guid: 4a009278bd43c0e4c9bca70b6fd5fd66, type: 3}
@@ -6689,6 +6759,7 @@ GameObject:
   m_Component:
   - component: {fileID: 410109398}
   - component: {fileID: 410109397}
+  - component: {fileID: 410109399}
   m_Layer: 0
   m_Name: Medium_DryPlanet
   m_TagString: Untagged
@@ -6763,6 +6834,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &410109399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410109396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f339fffcee054f040a5b14d4cfba2a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.3
 --- !u!4 &413503938 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6133311919198301996, guid: 4a009278bd43c0e4c9bca70b6fd5fd66, type: 3}
@@ -8298,6 +8382,8 @@ GameObject:
   m_Component:
   - component: {fileID: 543427384}
   - component: {fileID: 543427383}
+  - component: {fileID: 543427385}
+  - component: {fileID: 543427386}
   m_Layer: 0
   m_Name: Big_BlueFrozenPlanet (1)
   m_TagString: Untagged
@@ -8372,6 +8458,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &543427385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543427382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f339fffcee054f040a5b14d4cfba2a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.3
+--- !u!114 &543427386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543427382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f339fffcee054f040a5b14d4cfba2a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 1
 --- !u!1001 &552536884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9258,6 +9370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 576434100}
   - component: {fileID: 576434099}
+  - component: {fileID: 576434101}
   m_Layer: 0
   m_Name: Big_BlueFrozenPlanet (2)
   m_TagString: Untagged
@@ -9332,6 +9445,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &576434101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576434098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f339fffcee054f040a5b14d4cfba2a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.3
 --- !u!4 &576740923 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6133311919198301996, guid: 4a009278bd43c0e4c9bca70b6fd5fd66, type: 3}
@@ -9481,6 +9607,7 @@ GameObject:
   m_Component:
   - component: {fileID: 589377494}
   - component: {fileID: 589377493}
+  - component: {fileID: 589377495}
   m_Layer: 0
   m_Name: PyramidSpaceStation
   m_TagString: Untagged
@@ -9555,6 +9682,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &589377495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589377492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f339fffcee054f040a5b14d4cfba2a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.3
 --- !u!1001 &589667128
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12450,6 +12590,7 @@ GameObject:
   m_Component:
   - component: {fileID: 646367844}
   - component: {fileID: 646367843}
+  - component: {fileID: 646367845}
   m_Layer: 0
   m_Name: BigBluePlanet (1)
   m_TagString: Untagged
@@ -12524,6 +12665,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &646367845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646367842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f339fffcee054f040a5b14d4cfba2a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.3
 --- !u!4 &648707099 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8282131552441171986, guid: 69bb62ab0a22b454ab3c1a7e6c5a110a, type: 3}
@@ -13448,6 +13602,7 @@ GameObject:
   m_Component:
   - component: {fileID: 744744475}
   - component: {fileID: 744744474}
+  - component: {fileID: 744744476}
   m_Layer: 0
   m_Name: Big_BlueFrozenPlanet
   m_TagString: Untagged
@@ -13522,6 +13677,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &744744476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744744473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f339fffcee054f040a5b14d4cfba2a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.3
 --- !u!1001 &750226862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14434,6 +14602,7 @@ GameObject:
   m_Component:
   - component: {fileID: 838195744}
   - component: {fileID: 838195743}
+  - component: {fileID: 838195745}
   m_Layer: 0
   m_Name: SolarSpaceStation (1)
   m_TagString: Untagged
@@ -14508,6 +14677,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &838195745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838195742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f339fffcee054f040a5b14d4cfba2a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.3
 --- !u!4 &850025168 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 111767558614867184, guid: cfd62ad4c55daa942bae8f75211b08e0, type: 3}
@@ -14789,6 +14971,7 @@ GameObject:
   m_Component:
   - component: {fileID: 896009162}
   - component: {fileID: 896009161}
+  - component: {fileID: 896009163}
   m_Layer: 0
   m_Name: SolarSpaceStation
   m_TagString: Untagged
@@ -14863,6 +15046,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &896009163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896009160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f339fffcee054f040a5b14d4cfba2a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.3
 --- !u!1001 &898098782
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18241,6 +18437,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1029512413}
   - component: {fileID: 1029512412}
+  - component: {fileID: 1029512414}
   m_Layer: 0
   m_Name: Purple-Planet-wih-Moon
   m_TagString: Untagged
@@ -18315,6 +18512,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1029512414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029512411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f339fffcee054f040a5b14d4cfba2a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.3
 --- !u!4 &1029567141 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6133311919198301996, guid: 4a009278bd43c0e4c9bca70b6fd5fd66, type: 3}
@@ -18630,6 +18840,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1071518715}
   - component: {fileID: 1071518714}
+  - component: {fileID: 1071518716}
   m_Layer: 0
   m_Name: Small_SpaceStation (1)
   m_TagString: Untagged
@@ -18704,6 +18915,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1071518716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071518713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f339fffcee054f040a5b14d4cfba2a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.3
 --- !u!1001 &1074001586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19215,6 +19439,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1129809311}
   - component: {fileID: 1129809310}
+  - component: {fileID: 1129809312}
   m_Layer: 0
   m_Name: AlienSpaceStation
   m_TagString: Untagged
@@ -19289,6 +19514,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1129809312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129809309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f339fffcee054f040a5b14d4cfba2a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.3
 --- !u!1001 &1131500743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24234,6 +24472,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1352007687}
   - component: {fileID: 1352007686}
+  - component: {fileID: 1352007688}
   m_Layer: 0
   m_Name: BigRedPlanet
   m_TagString: Untagged
@@ -24308,6 +24547,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1352007688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352007685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f339fffcee054f040a5b14d4cfba2a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.3
 --- !u!1 &1355364650 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 111767558614867189, guid: cfd62ad4c55daa942bae8f75211b08e0, type: 3}
@@ -24605,6 +24857,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1374277787}
   - component: {fileID: 1374277786}
+  - component: {fileID: 1374277788}
   m_Layer: 0
   m_Name: Big_Blackhole (1)
   m_TagString: Untagged
@@ -24673,12 +24926,25 @@ Transform:
   m_GameObject: {fileID: 1374277785}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -44.4, y: 211.71194, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1374277788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374277785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f339fffcee054f040a5b14d4cfba2a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.3
 --- !u!1001 &1380681569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25892,6 +26158,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1448699503}
   - component: {fileID: 1448699502}
+  - component: {fileID: 1448699504}
   m_Layer: 0
   m_Name: Red-Planet-With-Ice
   m_TagString: Untagged
@@ -25966,6 +26233,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1448699504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448699501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f339fffcee054f040a5b14d4cfba2a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.3
 --- !u!1 &1449810124 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 111767558614867189, guid: cfd62ad4c55daa942bae8f75211b08e0, type: 3}
@@ -26668,6 +26948,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1506254580}
   - component: {fileID: 1506254579}
+  - component: {fileID: 1506254581}
   m_Layer: 0
   m_Name: AlienSpaceStation (2)
   m_TagString: Untagged
@@ -26742,6 +27023,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1506254581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506254578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f339fffcee054f040a5b14d4cfba2a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.3
 --- !u!1 &1507907758
 GameObject:
   m_ObjectHideFlags: 0
@@ -26752,6 +27046,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1507907760}
   - component: {fileID: 1507907759}
+  - component: {fileID: 1507907761}
   m_Layer: 0
   m_Name: Medium_BluePlanet
   m_TagString: Untagged
@@ -26826,6 +27121,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1507907761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507907758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f339fffcee054f040a5b14d4cfba2a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.3
 --- !u!1 &1509291863 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 111767558614867189, guid: cfd62ad4c55daa942bae8f75211b08e0, type: 3}
@@ -27720,6 +28028,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1562964131}
   - component: {fileID: 1562964130}
+  - component: {fileID: 1562964132}
   m_Layer: 0
   m_Name: BigBluePlanet
   m_TagString: Untagged
@@ -27794,6 +28103,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1562964132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562964129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f339fffcee054f040a5b14d4cfba2a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.3
 --- !u!4 &1564273865 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8282131552441171986, guid: 69bb62ab0a22b454ab3c1a7e6c5a110a, type: 3}
@@ -29522,6 +29844,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1743506572}
   - component: {fileID: 1743506571}
+  - component: {fileID: 1743506573}
   m_Layer: 0
   m_Name: Galaxy
   m_TagString: Untagged
@@ -29596,6 +29919,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1743506573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743506570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f339fffcee054f040a5b14d4cfba2a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.3
 --- !u!1001 &1751158417
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33994,7 +34330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f339fffcee054f040a5b14d4cfba2a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxFactor: 1
+  parallaxFactor: 0.4
 --- !u!4 &1917833917 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6133311919198301996, guid: 4a009278bd43c0e4c9bca70b6fd5fd66, type: 3}
@@ -34783,6 +35119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1970089911}
   - component: {fileID: 1970089910}
+  - component: {fileID: 1970089912}
   m_Layer: 0
   m_Name: BigRedPlanet (1)
   m_TagString: Untagged
@@ -34857,6 +35194,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1970089912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970089909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f339fffcee054f040a5b14d4cfba2a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxFactor: 0.3
 --- !u!1001 &1971425491
 PrefabInstance:
   m_ObjectHideFlags: 0
