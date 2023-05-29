@@ -17,8 +17,11 @@ public class ParallaxScript : MonoBehaviour
 
     private void Update()
     {
-        float deltaMovement = cameraTransform.position.x - lastCameraPosition.x;
-        transform.position += Vector3.right * (deltaMovement * parallaxFactor);
+        float deltaX = cameraTransform.position.x - lastCameraPosition.x;
+        float deltaY = cameraTransform.position.y - lastCameraPosition.y;
+
+        Vector3 deltaMovement = new Vector3(deltaX, deltaY, 0f);
+        transform.position += deltaMovement * parallaxFactor;
 
         lastCameraPosition = cameraTransform.position;
     }
